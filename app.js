@@ -9,6 +9,8 @@ var index = require('./routes/index');
 var users = require('./routes/users');
 var linebot = require('./routes/linewebhook');
 
+var mongo = require('mongodb');
+
 var app = express();
 
 // view engine setup

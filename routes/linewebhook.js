@@ -10,6 +10,7 @@ var bot = linebot({
 });
 
 bot.on('message', function (event) {
+  console.log(event);
   event.reply(event.message.text).then(function (data) {
     console.log(data);
       // success 
