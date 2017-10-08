@@ -27,10 +27,10 @@ app.use('/', index);
 app.use('/users', users);
 app.use('/linewebhook', linebot);
 
-var server = app.listen(process.env.PORT || 8080, function() {
-  var port = server.address().port;
-  console.log("App now running on port", port);
-});
+// var server = app.listen(process.env.PORT || 8080, function() {
+//   var port = server.address().port;
+//   console.log("App now running on port", port);
+// });
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
