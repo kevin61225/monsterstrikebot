@@ -13,11 +13,15 @@ bot.on('message', function (event) {
     console.log(data);
       // success 
   }).catch(function (error) {
+    console.log(error);
       // error 
   });
 });
 
+bot.listen('/linewebhook', 443);
+
 var linebotParser = bot.parser();
-router.post('/', linebotParser);
+router.post('/linewebhook', linebotParser);
+router.listen(443);
 
 module.exports = router;
